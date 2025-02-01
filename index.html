@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 10 Animais Perigosos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Modal Tutorial -->
+  <div id="tutorialModal" class="modal">
+    <div class="modal-content">
+      <h2>Como Jogar</h2>
+      <div class="tutorial-steps">
+        <div class="step">
+          <h3>1. Objetivo</h3>
+          <p>Adivinhe os itens da lista diária!</p>
+        </div>
+        <div class="step">
+          <h3>2. Como Jogar</h3>
+          <p>Use seu conhecimento para acertar o item de cada Top 10 utilizando o campo de texto ou use o teclado virtual.</p>
+          <p>Se se você acertar um dos itens da lista, ele aparecerá na posição correta!</p>
+        </div>
+        <div class="step">
+          <h3>3. Desistir</h3>
+          <p>Use o botão "Desistir" para receber todas as respostas e finalizar o jogo.</p>
+          <p>Os números indicam a posição no ranking de cada item da lista.</p>
+        </div>
+      </div>
+      <button class="btn" id="closeTutorial">Entendi!</button>
+    </div>
+  </div>
+
+  <header>
+    <h1>Top 10 Diário</h1>
+    <nav>
+      <a href="#" id="howToPlay">Como Jogar</a>
+      <a href="#" id="about">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Adivinhe: Países mais seguros do mundo em 2023!</h2>
+    <div class="game-area">
+      <div class="grid-container">
+        <div class="grid">
+          <div class="square" data-position="1">1</div>
+          <div class="square" data-position="2">2</div>
+          <div class="square" data-position="3">3</div>
+          <div class="square" data-position="4">4</div>
+          <div class="square" data-position="5">5</div>
+          <div class="square" data-position="6">6</div>
+          <div class="square" data-position="7">7</div>
+          <div class="square" data-position="8">8</div>
+          <div class="square" data-position="9">9</div>
+          <div class="square" data-position="10">10</div>
+        </div>
+      </div>
+      
+      <div class="input-area">
+        <input type="text" id="guessInput" placeholder="Digite uma resposta..." autocomplete="off">
+        <button class="btn" id="submitGuess">Responder</button>
+      </div>
+
+      <div class="virtual-keyboard">
+        <div class="keyboard-row">
+          <button class="key">Q</button><button class="key">W</button><button class="key">E</button>
+          <button class="key">R</button><button class="key">T</button><button class="key">Y</button>
+          <button class="key">U</button><button class="key">I</button><button class="key">O</button>
+          <button class="key">P</button>
+        </div>
+        <div class="keyboard-row">
+          <button class="key">A</button><button class="key">S</button><button class="key">D</button>
+          <button class="key">F</button><button class="key">G</button><button class="key">H</button>
+          <button class="key">J</button><button class="key">K</button><button class="key">L</button>
+          <button class="key">Ç</button>
+        </div>
+        <div class="keyboard-row">
+          <button class="key">Z</button><button class="key">X</button><button class="key">C</button>
+          <button class="key">V</button><button class="key">B</button><button class="key">N</button>
+          <button class="key">M</button>
+        </div>
+        <div class="keyboard-row">
+          <button class="key space">ESPAÇO</button>
+          <button class="key backspace">⌫</button>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="newGame">Jogos anteriores</button>
+        <button class="btn danger" id="giveUp">Desistir</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Jogo desenvolvido por DanielSR.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
