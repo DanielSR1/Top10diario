@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Diário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Modal Tutorial -->
+    <div id="tutorialModal" class="modal">
+        <div class="modal-content">
+            <h2>Como Jogar</h2>
+            <div class="tutorial-steps">
+                <div class="step">
+                    <h3>1. Objetivo</h3>
+                    <p>Adivinhe os itens da lista diária!</p>
+                </div>
+                <div class="step">
+                    <h3>2. Como Jogar</h3>
+                    <p>Use seu conhecimento para acertar o item de cada Top 10 utilizando o campo de texto ou use o teclado virtual.</p>
+                    <p>Se se você acertar um dos itens da lista, ele aparecerá na posição correta!</p>
+                </div>
+                <div class="step">
+                    <h3>3. Desistir</h3>
+                    <p>Use o botão "Desistir" para receber todas as respostas e finalizar o jogo.</p>
+                    <p>Os números indicam a posição no ranking de cada item da lista.</p>
+                </div>
+            </div>
+            <button class="btn" id="closeTutorial">Entendi!</button>
+        </div>
+    </div>
+
+    <!-- Modal Calendário -->
+    <div id="calendarModal" class="modal">
+        <div class="modal-content">
+            <h2>Jogos Anteriores</h2>
+            <div id="calendar-content"></div>
+            <button class="btn" id="closeCalendar">Fechar</button>
+        </div>
+    </div>
+
+    <header>
+        <h1>Top 10 Diário</h1>
+        <nav>
+            <a href="#" id="howToPlay">Como Jogar</a>
+            <a href="#" id="about">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Adivinhe: frases machistas mais fodas do Daniel.</h2>
+        <div class="game-area">
+            <div class="grid-container">
+                <div class="grid">
+                    <div class="square" data-position="1">1°</div>
+                    <div class="square" data-position="2">2°</div>
+                    <div class="square" data-position="3">3°</div>
+                    <div class="square" data-position="4">4°</div>
+                    <div class="square" data-position="5">5°</div>
+                    <div class="square" data-position="6">6°</div>
+                    <div class="square" data-position="7">7°</div>
+                    <div class="square" data-position="8">8°</div>
+                    <div class="square" data-position="9">9°</div>
+                    <div class="square" data-position="10">10°</div>
+                </div>
+            </div>
+            
+            <div class="input-area">
+                <input type="text" id="guessInput" placeholder="Digite uma resposta..." autocomplete="off">
+                <button class="btn" id="submitGuess">Responder</button>
+                <div class="error-message">Resposta incorreta! Tente novamente.</div>
+            </div>
+
+
+            <div class="controls">
+                <button class="btn" id="newGame">Jogos anteriores</button>
+                <button class="btn danger" id="giveUp">Desistir</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Jogo desenvolvido por DanielSR.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
