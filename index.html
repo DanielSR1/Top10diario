@@ -19,8 +19,8 @@
                 </div>
                 <div class="step">
                     <h3>2. Como Jogar</h3>
-                    <p>Use seu conhecimento para acertar o item de cada Top 10 utilizando o campo de texto ou use o teclado virtual.</p>
-                    <p>Se se você acertar um dos itens da lista, ele aparecerá na posição correta!</p>
+                    <p>Use seu conhecimento para acertar o item de cada Top 10 utilizando o campo de texto.</p>
+                    <p>Se você acertar um dos itens da lista, ele aparecerá na posição correta!</p>
                 </div>
                 <div class="step">
                     <h3>3. Desistir</h3>
@@ -50,7 +50,7 @@
     </header>
 
     <main>
-        <h2>Adivinhe: Países mais seguros do mundo em 2023!</h2>
+        <h2 id="dailyTheme">Carregando tema...</h2>
         <div class="game-area">
             <div class="grid-container">
                 <div class="grid">
@@ -70,9 +70,8 @@
             <div class="input-area">
                 <input type="text" id="guessInput" placeholder="Digite uma resposta..." autocomplete="off">
                 <button class="btn" id="submitGuess">Responder</button>
-                <div class="error-message"> não está no ranking.</div>
+                <div class="error-message">Resposta incorreta!</div>
             </div>
-
 
             <div class="controls">
                 <button class="btn" id="newGame">Jogos anteriores</button>
@@ -82,9 +81,9 @@
     </main>
 
     <footer>
-        <p>&copy;Desenvolvido por DanielSR.</p>
+        <p>&copy; 2024 Top 10 Diário. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>

@@ -297,54 +297,17 @@ main h2 {
 
 @keyframes shake {
   10%, 90% {
-      transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
   }
   20%, 80% {
-      transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
   }
   30%, 50%, 70% {
-      transform: translate3d(-2px, 0, 0);
+    transform: translate3d(-2px, 0, 0);
   }
   40%, 60% {
-      transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
   }
-}
-
-/* Teclado Virtual */
-.virtual-keyboard {
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.keyboard-row {
-  display: flex;
-  justify-content: center;
-  margin: 5px 0;
-}
-
-.key {
-  background-color: #1a365d;
-  border: 1px solid #233554;
-  border-radius: 4px;
-  color: #ccd6f6;
-  cursor: pointer;
-  font-size: 14px;
-  margin: 2px;
-  padding: 8px 12px;
-  transition: all 0.2s ease;
-}
-
-.key:hover {
-  background-color: #234668;
-  transform: translateY(-2px);
-}
-
-.key.space {
-  width: 200px;
-}
-
-.key.backspace {
-  width: 80px;
 }
 
 /* Botões */
